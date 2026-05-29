@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "Task Manager Frontend",
   "scripts": {
-    "start": "npx serve -s . -l $PORT"
+    "start": "serve -s . -l tcp://0.0.0.0:$PORT",
+    "build": "echo 'No build step needed'"
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
   },
   "engines": {
     "node": "18.x"
